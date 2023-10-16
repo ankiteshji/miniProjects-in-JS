@@ -24,14 +24,15 @@ form.addEventListener('submit',(e)=>{
         results.innerHTML= `<span> ${bmi} </span>`
 
         if(bmi<=18.6){
-                alert("You are underweight");
+                // alert("You are underweight");
+                results.innerHTML=`<span> You are Underweight as you BMI is </span>`+results.innerHTML;
         }
         else if(bmi>=18.6 && bmi<=24.9){
-            alert("You are normal");
+            results.innerHTML=`<span> You are Normal as you BMI is </span>`+results.innerHTML;
 
         }
         else{
-            alert("You are OVERWEIGHT");
+            results.innerHTML=`<span> You are Overwieght as you BMI is </span>`+results.innerHTML;
         }
 
     }
